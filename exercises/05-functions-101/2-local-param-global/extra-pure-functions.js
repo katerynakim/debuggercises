@@ -24,6 +24,7 @@ function b(y) {
   return result;
 }
 
+// This function (below) is pure
 function c(y, x) {
   const m = y - x
   return x + m;
