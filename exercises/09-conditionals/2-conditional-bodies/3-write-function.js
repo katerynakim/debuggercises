@@ -3,17 +3,17 @@
   don't move on to the next 3 tests until you've finished the path you're working on
 */
 
-function mystery(a, b) {
+const mystery = (a, b) => {
   let result = '';
   if (typeof a === typeof b) {
-    result = _;
+    result = a ;
   } else if (Boolean(a) === Boolean(b)) {
-    result = _;
+    result = b ;
   } else {
-    result = _;
+    result = a || b ;
   }
   return result;
-}
+};
 
 // path 1
 const _1_expect = '12';
