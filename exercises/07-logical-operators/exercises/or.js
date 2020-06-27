@@ -3,6 +3,9 @@
 // write a function that behaves the same as ||
 //  ... without using ||
 function or(left, right) {
+  const leftBool = Boolean(left);
+    if(leftBool === true) return left;
+    return right;
 
 }
 
