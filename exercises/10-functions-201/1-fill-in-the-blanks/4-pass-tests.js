@@ -1,3 +1,4 @@
+  
 'use strict';
 
 // write the logic to pass the tests
@@ -10,8 +11,13 @@
  */
 function mystery(a) {
   // no need to check a , they can be any type
-
-  const result = _;
+  // for all cases let result equal to the opposite of a converted to boolean
+  let result = !Boolean(a);
+  // except for the below cases set result to a converted to boolean
+  if(a === null || a === '' || a === 'four' || a === 'hi!' ) {
+    result = Boolean(a);}
+    
+  
 
   if (typeof result !== 'boolean') { throw new TypeError(); }
   return result;

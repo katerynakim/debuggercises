@@ -1,3 +1,4 @@
+  
 'use strict';
 
 // fix the mistakes in this conditional
@@ -15,10 +16,10 @@ function areNotSameLength(str1, str2) {
   if (typeof str2 !== 'string') { throw new TypeError(); }
 
   let result;
-  if (str1.Length = str2.Length) {
-    result += true;
+  if (str1.length !== str2.length) {
+    result = true;
   } else {
-    result += false;
+    result = false;
   }
 
   if (typeof result !== 'boolean') { throw new TypeError(); }

@@ -14,11 +14,11 @@ function areNotSameLength(num1, num2) {
   if (typeof num1 !== 'number') { throw new TypeError(); }
   if (typeof num2 !== 'number') { throw new TypeError(); }
 
-  const result = 'the same';
-  if (num1 = num2) {
-    result === `are {result}`;
+  let result = 'the same';
+  if (num1 === num2) {
+    result = `are ${result}`;
   } else {
-    result === "aren't ${result}";
+    result = `aren\'t ${result}`;
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }
